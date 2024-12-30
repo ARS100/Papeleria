@@ -1,0 +1,531 @@
+ <!DOCTYPE html>
+<html>
+<head>
+ <!-- esta seccion de codigo contiene el titulo de la pagina y el llamado de hoja de estilo, el llamado a estilo de texto de google fonts-->
+ <title>Papeleria Techno</title>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="css/estyle.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+         <!-- esta seccion de codigo contiene el banner y los item de interaccion con el usuario -->
+        <header >
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid" >
+            <img class="logo" src="imagenas productos/logo papeleria.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active"  href="#inicio-container"> INICIO </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active"  href="#productos-container"> PRODUCTOS </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active"  href="#equipo-container"> NOSOTROS </a>
+                </li>
+                <li class="nav-item"></li>
+                <a class="nav-link active" href="#cartTable"><img class="bi bi-cart4" width="50" height="35" src="iconos/cart4.svg"  alt="carrito-compras"></a>
+                </li>
+                </div>
+            </div>
+            </nav>
+        </header>
+          <!-- esta seccion de codigo contiene el titulo y el mensaje de bienvenida, mision y vision del proyecto -->
+        <div id="inicio-container">
+            <H1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:orange">¡Bienvenidos a la Papelería Techno!</H1>
+            <p>Bienvenidos a Papeleria Techno, su destino favorito para todo lo 
+                relacionado con papelería. Desde útiles escolares hasta material de 
+                oficina y artículos creativos, contamos con una selección cuidadosamente
+                elegida para satisfacer las necesidades de nuestros clientes. En Papeleria Techno, 
+                creemos en la importancia de la educación y la creatividad, y nos esforzamos por ofrecer
+                productos que inspiren y faciliten el aprendizaje. Nuestro equipo está siempre dispuesto 
+                a ayudar, asegurando que cada visita sea una experiencia gratificante. ¡Explora nuestro 
+                mundo de posibilidades y deja volar tu imaginación!</p>
+                <hr>
+            <h2 style="color:#070707">Visión</h2>
+            <p>Ser la papelería líder en la comunidad, reconocida por ofrecer productos de alta
+                 calidad y un servicio excepcional, promoviendo la creatividad y el aprendizaje 
+                 en todos nuestros clientes.</p>
+                 <hr>
+            <h2 style="color:#070707">Misión</h2>
+            <p>Nuestra misión es proporcionar una amplia variedad de productos de papelería y 
+                material escolar que satisfagan las necesidades de estudiantes, profesionales y artistas.
+                Nos comprometemos a brindar un servicio al cliente excepcional,
+                asesorando y acompañando a nuestros clientes en cada una de sus compras, y
+                creando un espacio donde la creatividad y el conocimiento florezcan.</p>
+        </div>
+    <hr style="width: 100%; ">
+    <!-- esta seccion de codigo esta compuesta de un contener y los productos con su informacion completa, tambien cuenta con el boton agrregar -->
+        <H1 style="text-align: center;" id="productos-container">Productos</H1>  
+    <!--seccion primaria-->   
+        <div class="card-group">
+        <div class="card">
+            <img src="imagenas productos/cuadernosgrapados.jpg" class="card-img-top" alt="product1">
+            <div class="card-body">
+              <h5 class="card-title">Cuadernos grapados</h5>
+              <h5 class="card-title">$3500</h5>
+              <p class="card-text">CUADERNO COSIDO DE 100 HOJAS MEDIDAS 24X18 CMS<br>
+                *Cuadernos norma cosidos colección imágenes<br>
+                *Cuadernos norma cosidos con 20 diseños diferentes<br>
+                *Cuadriculados<br></p>
+            </div>
+            <div class="card-footer">
+              <small class="d-grid gap-2">
+                <button class="btn btn-primary" onclick="addToCart('Cuadernos grapados', 3500)">Agregar a Carrito</button>
+              </small>
+            </div>
+          </div>
+            <div class="card">
+                <img src="imagenas productos/lapiceros.jpg" class="card-img-top" alt="product2">
+                <div class="card-body">
+                  <h5 class="card-title">Lapiceros</h5>
+                  <h5 class="card-title">$1500</h5>
+                  <p class="card-text">Descubre nuestra coleccion de lapiceros en
+                    rojo,negro y azul. Perfectos para cualquier ocasión
+                    estos lapiceros ofrecen una escritura suave y precisa.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="d-grid gap-2">
+                    <button class="btn btn-primary" onclick="addToCart('Lapiceros', 1500)">Agregar al Carrito</button>
+                  </small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="imagenas productos/cosedoras.jpg" class="card-img-top" alt="product3">
+                <div class="card-body">
+                  <h5 class="card-title">Cosedora</h5>
+                  <h5 class="card-title">$14000</h5>
+                  <p class="card-text">una herramienta indispensable para presentar
+                    tus proyectos en orden y una excelente presentacion,
+                    soporta 50 ganchos en su interior</p>
+                </div>
+                <div class="card-footer">
+                  <small class="d-grid gap-2">
+                    <button class="btn btn-primary" onclick="addToCart('Cosedora', 14000)">Agregar al Carrito</button>
+                  </small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="imagenas productos/ganchos.jpg" class="card-img-top" alt="product4">
+                <div class="card-body">
+                  <h5 class="card-title">Ganchos para cosedoras</h5>
+                  <h5 class="card-title">$15000</h5>
+                  <p class="card-text">PRECIO $Incluye: 3 Cajas x 5.000 c/u
+                    Garantía del vendedor: 1 meses</p>
+                </div>
+                <div class="card-footer">
+                  <small class="d-grid gap-2">
+                    <button class="btn btn-primary" onclick="addToCart('Ganchos para cosedoras', 15000)">Agregar al Carrito</button>
+                  </small>
+                </div>
+              </div>
+            </div>
+    <!--segunda seccion-->
+        <div class="card-group">
+                <div class="card">
+                    <img src="imagenas productos/blockiris.png" class="card-img-top" alt="product5">
+                    <div class="card-body">
+                      <h5 class="card-title">Block iris</h5>
+                      <h5 class="card-title">$8000</h5>
+                      <p class="card-text">Tamaño carta.<br>
+                        - 35 hojas.<br>
+                        - Tamaño 28cm alto x 21.5 ancho.<br>
+                        - Colores surtidos.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Block iris', 8000)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                    <div class="card">
+                        <img src="imagenas productos/Folder-En-Todas-Las-Medidas-Color-Negro-Y-Blanc.jpg" class="card-img-top" alt="product6">
+                        <div class="card-body">
+                          <h5 class="card-title">Folder tamaño carta</h5>
+                          <h5 class="card-title">$35000</h5>
+                          <p class="card-text">Material: Plástico.<br>
+                            Peso: 0,64 libras.<br>
+                            Tamaño del producto: 21,5 cm x 27,5 cm (8,5" x 11").<br>
+                            Dimensiones del embalaje: 11.30 x 11.60 x 1.10 PULGADAS.<br>
+                            Color: Negro.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="d-grid gap-2">
+                            <button class="btn btn-primary" onclick="addToCart('Folder tamaño carta', 35000)">Agregar al Carrito</button>
+                          </small>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="imagenas productos/recibo-caja-menor-1.jpg" class="card-img-top" alt="product7">
+                        <div class="card-body">
+                          <h5 class="card-title">Recibo caja menor</h5>
+                          <h5 class="card-title">$8000</h5>
+                          <p class="card-text">Talonario de recibos de 200 hojas - a 1 solo color / Para uso en el control de caja menor.<br>
+                            Tamaño: 11.3 x 9.2 cm</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="d-grid gap-2">
+                            <button class="btn btn-primary" onclick="addToCart('Recibo de caja menor', 8000)">Agregar al Carrito</button>
+                          </small>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="imagenas productos/lapiz-mirado-2.png" class="card-img-top" alt="product8">
+                        <div class="card-body">
+                          <h5 class="card-title">Lapiz N2</h5>
+                          <h5 class="card-title">$1500</h5>
+                          <p class="card-text">Lapiz Numero 2 Mirado Hb Cod:554 (X UND)<br>
+                            Lapiz mirado 2. Lápiz de madera No.2 Escritura más suave e intensa<br>
+                            con borrrador especialmente formulado que no mancha ni rompe el pape,<br>
+                             marca de calidad controlada</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="d-grid gap-2">
+                            <button class="btn btn-primary" onclick="addToCart('Lapiz N2', 1500)">Agregar al Carrito</button>
+                          </small>
+                        </div>
+                      </div>
+            </div>
+    <!--seccion tercera-->
+        <div class="card-group">
+            <div class="card">
+                <img src="imagenas productos/lapizrojo.jpg" class="card-img-top" alt="product9">
+                <div class="card-body">
+                  <h5 class="card-title">Lapiz Rojo</h5>
+                  <h5 class="card-title">$1350</h5>
+                  <p class="card-text">Lapiz mirado 2 color rojo X Und y X 12 Und. Lápiz de madera No.2 
+                    Escritura más suave e intensa con borrrador especialmente formulado
+                     que no mancha ni rompe el papel.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="d-grid gap-2">
+                    <button class="btn btn-primary" onclick="addToCart('Lapiz rojo', 1350)">Agregar al Carrito</button>
+                  </small>
+                </div>
+              </div>
+                <div class="card">
+                    <img src="imagenas productos/colores.jpg" class="card-img-top" alt="product10">
+                    <div class="card-body">
+                      <h5 class="card-title">Caja de Colores</h5>
+                      <h5 class="card-title">$23000</h5>
+                      <p class="card-text">Colores Norma 16/15 En Caja Encuentra aquí Colores Norma 15/15<br>
+                        en caja plástica y recibe en la comodidad de tu hogar. Descubre<br>
+                        nuestro amplio portafolio de productos.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Caja de colores', 23000)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenas productos/bisturin.png" class="card-img-top" alt="product11">
+                    <div class="card-body">
+                      <h5 class="card-title">Bisturin</h5>
+                      <h5 class="card-title">$8000</h5>
+                      <p class="card-text">Bisturí Plástico 18mm. Producto nuevo de la categoría</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Bisturin', 8000)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenas productos/CUADERNOS ESPIRALES.jpg" class="card-img-top" alt="product12">
+                    <div class="card-body">
+                      <h5 class="card-title">Cuaderno Argollado</h5>
+                      <h5 class="card-title">$4500</h5>
+                      <p class="card-text">Cuaderno Grande 21 x 28 cm Argollado Rayado Diseño a elección<br>
+                        (SEGUN DISPONIBILIDAD) Marca: Primavera o Scribe Pasta DURA</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Cuadernos argollados', 4500)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+            </div>
+    <!--seccion cuarta-->
+        <div class="card-group">
+            <div class="card">
+                <img src="imagenas productos/blockrayado.jpg" class="card-img-top" alt="product13">
+                <div class="card-body">
+                  <h5 class="card-title">Block Rayado Carta</h5>
+                  <h5 class="card-title">$5000</h5>
+                  <p class="card-text">Block 1/2 carta papel bond, 50 hojas. (IMAGEN ILUSTRATIVA,<br> 
+                    PUEDE LLEGAR ESTA U OTRA PORTADA) Block 1/2 Carta 50 Hojas.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="d-grid gap-2">
+                    <button class="btn btn-primary" onclick="addToCart('Block rayado carta', 5000)">Agregar al Carrito</button>
+                  </small>
+                </div>
+              </div>
+                <div class="card">
+                    <img src="imagenas productos/grapadora.jpg" class="card-img-top" alt="product14">
+                    <div class="card-body">
+                      <h5 class="card-title">Grapadora de Dos Huecos</h5>
+                      <h5 class="card-title">$18000</h5>
+                      <p class="card-text">Perforadora Studmark 2 Huecos 4509, Marca Studmark.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Grapadora de  dos huecos', 18000)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenas productos/tablerocorcho.jpg" class="card-img-top" alt="product15">
+                    <div class="card-body">
+                      <h5 class="card-title">Tablero de Corcho</h5>
+                      <h5 class="card-title">$150000</h5>
+                      <p class="card-text">Tablero de corcho Quartet, 60x90 cm, Marco negro, Pizarra de mensajes. 
+                        NOMBRE EN INGLES: Quartet Cork Bulletin Board, Framed Corkboard, 2' x 3',<br>
+                        Black Frame</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Tablero de corcho', 150000)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenas productos/marcadoresborrables.jpg" class="card-img-top" alt="product16">
+                    <div class="card-body">
+                      <h5 class="card-title">Marcadores borrables</h5>
+                      <h5 class="card-title">$42000</h5>
+                      <p class="card-text">Caja X 12 Marcadores Borrables Para Tablero Expo *** El paquete se despacha 3
+                        por color, si deseas realizar el cambio por favor dejar un mensaje por interno<br>
+                        *** Disponibles</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Marcadores borrables para tablero', 42000)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+    <!--seccion cuarta-->
+        <div class="card-group">
+            <div class="card">
+                <img src="imagenas productos/tizas.jpg" class="card-img-top" alt="product17">
+                <div class="card-body">
+                  <h5 class="card-title">Tizas para Tablero</h5>
+                  <h5 class="card-title">$1000</h5>
+                  <p class="card-text">Tiza para tablero x unidad colores variados.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="d-grid gap-2">
+                    <button class="btn btn-primary" onclick="addToCart('Tizas para tablero', 1000)">Agregar al Carrito</button>
+                  </small>
+                </div>
+              </div>
+                <div class="card">
+                    <img src="imagenas productos/borradormarcadores.jpg" class="card-img-top" alt="product18">
+                    <div class="card-body">
+                      <h5 class="card-title">Borrados Para Marcadores</h5>
+                      <h5 class="card-title">$11000</h5>
+                      <p class="card-text">Articulo totalmente nuevo, se garantiza que se entrega nuevo, y en perfectas
+                        condiciones.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Borradores para marcadores', 11000)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenas productos/blockdibujo.jpg" class="card-img-top" alt="product19">
+                    <div class="card-body">
+                      <h5 class="card-title">Block de Dibujo</h5>
+                      <h5 class="card-title">$10500</h5>
+                      <p class="card-text">BLOCK DE PAPEL BOND BLANCO 115 gr, TAMANO 1/4 DE PIEGO (32 x 47 cm), IDEAL PARA DIBUJAR
+                        EN LAPIZ O CARBONCILLO Y DISENAR TODO TIPO DE TRABAJOS ARTISTICOS, SUPERFICIE LISA, 
+                        FORMATO HORIZONTAL.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Block de dibujo', 10500)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenas productos/bitacoras.jpg" class="card-img-top" alt="product20">
+                    <div class="card-body">
+                      <h5 class="card-title">Bitacoras</h5>
+                      <h5 class="card-title">$19000</h5>
+                      <p class="card-text">Bitácora argollada con portada de tapa dura. Hojas internas hechas en papel bond o 
+                        ecológico según elección. Diseño interior cuadriculado, rayado, pentagramado, punteado.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Bitacoras', 19000)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+    <!--seccion quinta-->
+        <div class="card-group">
+            <div class="card">
+                <img src="imagenas productos/cartaimpresora.jpg" class="card-img-top" alt="product21">
+                <div class="card-body">
+                  <h5 class="card-title">Papel Carta Para Impresora</h5>
+                  <h5 class="card-title">$18000</h5>
+                  <p class="card-text">Es un papel blanco multipropósito, elaborado 100 % con pulpa virgen de caña de azúcar, es 
+                    de excelente calidad y óptimo desempeño en todas las tecnologías de impresión.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="d-grid gap-2">
+                    <button class="btn btn-primary" onclick="addToCart('Papel carta para impresora', 18000)">Agregar al Carrito</button>
+                  </small>
+                </div>
+              </div>
+                <div class="card">
+                    <img src="imagenas productos/marcadoresvinilo.jpg" class="card-img-top" alt="product22">
+                    <div class="card-body">
+                      <h5 class="card-title">Marcadores De Vinilo</h5>
+                      <h5 class="card-title">$23000</h5>
+                      <p class="card-text">Los Marcadores Gráficos 751 Pelikan x10 und son la elección perfecta para diseñadores,
+                        artistas y entusiastas del arte que buscan precisión y calidad en sus creaciones.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Marcadores de vinilo', 23000)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenas productos/micropuntascolores.jpg" class="card-img-top" alt="product23">
+                    <div class="card-body">
+                      <h5 class="card-title">Micropuntas de colores</h5>
+                      <h5 class="card-title">$35000</h5>
+                      <p class="card-text">Este kit fe micropuntas contiene 24 unidades. Son de punta fina, ideales para escribir y dibujar.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Micropuntas de colores', 35000)">Agregar al Carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenas productos/portaminas.jpg" class="card-img-top" alt="product24">
+                    <div class="card-body">
+                      <h5 class="card-title">Portaminas</h5>
+                      <h5 class="card-title">$3500</h5>
+                      <p class="card-text">Portaminas Studmark 0.5 mm Marca: Studmark Cantidad: Venta por unidad Excelente calidad Incluye 
+                        borrador en la parte superior.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="addToCart('Portaminas', 3500)">Agregar al carrito</button>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+        <!---mostrar los productos-->
+    <table class="cart-table" id="cartTable">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody id="cartBody">
+            <!-- Los productos agregados aparecerán aquí -->
+        </tbody>
+    
+      </table>
+    <!--total-->
+    <div class="total" id="totalPrice">Total: $0</div>
+    <div style="text-align: center;">
+        <button class="btn btn-primary" onclick="checkout()">Comprar</button>
+    </div>
+    <!--llamado del script-->
+    <script src="javascript/funciones.js"></script>
+    <!-- esta seccion de codigo contiene la informacion del grupo de trabajo-->
+    <hr style="max-width: 200%;">
+        <h1 id="equipo-container">Nuestro Equipo</h1>
+            <div class="nosotros">
+            <div class="empleados">
+                <img class ="fotos" src="fotos/alejandro.jpg" alt="empleado1">
+                <h2>Alejandro</h2>
+                <p>Gerente</p>
+            </div>
+            <div class="empleados">
+                <img class ="fotos" src="fotos/oscar.jpg" alt="empleado2">
+                <h2>Oscar</h2>
+                <p>Administrador</p>
+            </div>
+            <div class="empleados">
+                <img  class ="fotos" src="fotos/cristian.jpg" alt="empleado3">
+                <h2>Cristian</h2>
+                <p>Asistente de ventas</p>
+            </div>
+            <div class="empleados">
+                <img class ="fotos"  src="fotos/marco antonio.jpg" alt="empleado4">
+                <h2>Marco</h2>
+                <p>Cajero</p>
+            </div>
+            <div class="empleados">
+                <img class ="fotos"  src="fotos/jhonatan.jpg" alt="empleado5">
+                <h2>Jhonatan</h2>
+                <p>Jefe de Inventario</p>
+            </div>
+            </div> 
+            
+            <footer>
+            <div class="footer-container">
+                    <!-- Sección de contacto -->
+                    <div class="footer-contact">
+                        <h3>Contacto</h3>
+                        <p>Email: papeleriatechno@gmail.com</p>
+                        <p>Teléfono: +57 3182148440</p>
+                    </div>
+                    
+                    <!-- Enlaces rápidos -->
+                    <div class="footer-links">
+                        <h3>Enlaces rápidos</h3>
+                        <ul>
+                            <li><a href="/about">Acerca de nosotros</a></li>
+                            <li><a href="/services">Servicios</a></li>
+                            <li><a href="/privacy">Política de privacidad</a></li>
+                            <li><a href="/terms">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+            
+                    <!-- Redes sociales -->
+                    <div class="footer-socials">
+                        <h3>Síguenos</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.twitter.com" target="_blank">X</a></li>
+                            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
+            </div>
+                
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                    <p>&copy; 2024. Todos los derechos reservados.</p>
+            </div>
+            </footer>   
+            <!--los enlaces de bootrasp-->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    </body>
+</html>

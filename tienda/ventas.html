@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- esta seccion de codigo contiene el titulo de la pagina y el llamado de hoja de estilo, el llamado a estilo de texto de google fonts-->
+ <title>Papeleria Techno</title>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="css/estyle.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script src="javascript/funciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <!-- esta seccion de codigo contiene el banner y los item de interaccion con el usuario -->
+     <header >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" >
+           <img class="logo" src="imagenas productos/logo papeleria.png" alt="logo">
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+               <a class="nav-link active"  href="tiendavirtual.html#inicio-container"> INICIO </a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link active"  href="tiendavirtual.html#productos-container"> PRODUCTOS </a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link active"  href="tiendavirtual.html#equipo-container"> NOSOTROS </a>
+               </li>
+               <li class="nav-item"></li>
+               <a class="nav-link active" href="tiendavirtual.html#cartTable"><img class="bi bi-cart4" width="50" height="35"src="iconos/cart4.svg"  alt="carrito-compras"></a>
+               </li>
+               </div>
+           </div>
+           </nav>
+       </header>
+    <title>Lista de Productos Seleccionados</title>
+    <!--mostrar los profuctos seleccionados-->
+    <!---mostrar los productos-->
+    <table class="cart-table" id="cartTable">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody id="cartBodyv">
+            <!-- Los productos agregados aparecerán aquí -->
+        </tbody>
+    </table>
+    <!--total-->
+    <div class="total" id="totalPricev">Total: $0</div>
+    <!--llamado del script-->
+    <script src="javascript/funciones.js"></script>
+    <!--opciones para terminar la compra-->
+    <div class="container-pago">
+        <h1>Formulario de Pago</h1>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="clienteName">Nombres:</label>
+                <input type="text" id="clienteName" required>
+            </div>
+            <div class="form-group">
+                <label for="clienteApellidos">Apellidos:</label>
+                <input type="text" id="clienteApellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="clienteTotal">Total:</label>
+                <input type="number" id="clienteTotal" required>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular:</label>
+                <input type="text" id="celular" maxlength="10">
+            </div>
+            <div class="form-group">
+                <label for="cardName">Nombre en la tarjeta:</label>
+                <input type="text" id="cardName" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Número de tarjeta:</label>
+                <input type="text" id="cardNumber" maxlength="16" required>
+                <span id="cardNumberError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="expiryDate">Fecha de expiración (MM/AA):</label>
+                <input type="text" id="expiryDate"  maxlength="5" pattern="^(0[1-9]|1[0-2])\/\d{2}$" required placeholder="MM/AA">
+                <span id="expiryDateError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" maxlength="4" required>
+                <span id="cvvError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="paymentMethod">Método de pago:</label>
+                <select id="paymentMethod" required>
+                    <option value="creditCard">Tarjeta de Crédito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bankTransfer">Transferencia Bancaria</option>
+                </select>
+            </div>
+            <button type="submit"  class="btn btn-primary">Finalizar Pago</button>
+        </form>
+        <div id="message" class="message"></div>
+    </div>
+    <!--llamamos la funciones del metodo de pago-->
+    <script src="javascript/funciones.js"></script>
+    <!--pie de pagina-->
+    <footer>
+        <div class="footer-container">
+            <!-- Sección de contacto -->
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p>Email: papeleriatechno@gmail.com</p>
+                <p>Teléfono: +57 3182148440</p>
+            </div>
+            
+            <!-- Enlaces rápidos -->
+            <div class="footer-links">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="/about">Acerca de nosotros</a></li>
+                    <li><a href="/services">Servicios</a></li>
+                    <li><a href="/privacy">Política de privacidad</a></li>
+                    <li><a href="/terms">Términos y condiciones</a></li>
+                </ul>
+            </div>
+    
+            <!-- Redes sociales -->
+            <div class="footer-socials">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">X</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>    
+</body>
+</html>

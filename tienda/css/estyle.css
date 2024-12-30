@@ -1,0 +1,490 @@
+/* FUERA DE LA RESPONSIBA*/
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@600&family=Noto+Sans+SC:wght@700&family=Tiny5&display=swap');
+  
+body{
+    font-family: "Dosis", sans-serif;
+    font-style: normal;
+    background-color: #f7f7f7;
+    font-weight: 200;
+}
+
+.logo {
+    width: 10%;
+    height: 40%;
+    margin: 5px;
+}
+
+
+hr{
+    border: 1px solid #2a3d66; width:100%;
+}
+
+
+#inicio-container{
+    width: 100%;
+    height: auto;
+    background-image:url('../imagenas productos/papeleria01.jpg');/*fondo imagen*/
+    background-blend-mode: lighten;
+    font-weight: 800;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;   
+   
+}
+
+#inicio-container h2 p {
+    margin-bottom: 2PX;
+    margin-top: 2%;
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+ }
+
+/*estilo a la caja de productos*/
+
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.papeleria{
+    width:95%;
+    height: 95%;
+}
+
+/*estilos de carrito de comprar*/
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cart-table th {
+    background-color: #036df8;
+    color: rgb(250, 250, 250);
+}
+
+.cart-table td {
+    background-color: #f9f9f9;
+}
+
+.cart-table td button {
+    padding: 5px 10px;
+    background-color: #036df8;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-table td button:hover {
+    background-color: #b0c4de;
+}
+
+.total {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: #b0c4de;
+    color: rgb(5, 5, 5);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-btn:hover {
+    background-color: #b0c4de;
+}
+
+.btn-agregar{
+    border: 1px solid #3498db;
+    margin-bottom: 4%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+/* termina el estilo del carrito*/
+
+.nosotros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre los cuadros */
+}
+
+.empleados {
+    background-color: white; /* Color de fondo del cuadro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centrar texto */
+    padding: 20px; /* Espaciado interno */
+    width: 200px; /* Ancho del cuadro, puedes ajustar */
+}
+
+.fotos {
+    border-radius: 50%; /* Hace la imagen redonda */
+    width: 50px; /* Ancho de la imagen, ajusta según necesites */
+    height: auto; /* Alto de la imagen, ajusta según necesites */
+    object-fit: cover; /* Asegura que la imagen cubra el área */
+}
+
+/*footer style*/
+footer {
+    background-color: #036df8;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-contact, .footer-links, .footer-socials {
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-links ul, .footer-socials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-socials li {
+    margin: 5px 0;
+}
+
+.footer-links a, .footer-socials a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover, .footer-socials a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/*stylo al pagina ventas*/
+.body-ventas {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container-pago {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-pago h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-pago .form-group {
+    margin-bottom: 15px;
+}
+
+.container-pago label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container-pago input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container-pago button {
+    width: 100%;
+    padding: 10px;
+    background-color:  #b0c4de;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-pago button:hover {
+    background-color: #218838;
+}
+
+.container-pago .message {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+
+/* fin de esylo pagina ventas*/
+
+@media (max-width: 768px) {
+
+    body{
+        font-family: "Dosis", sans-serif;
+        font-style: normal;
+        background-color: #f7f7f7;
+        font-weight: 100;}
+    hr{
+        border: 1px solid #cccccc; width:100%;
+    }
+    .top {
+       font-family: Verdana, Geneva, Tahoma, sans-serif;/*stilo de texto*/
+       display: flex;/*permite centarr los elementos en el contenedor*/
+       width: 100%;
+       flex-direction: row;/*apila los elementos de manera horizontal*/
+       background-color: #2a3d66;/*color de fon del banner*/
+       padding: 1%;/*espaciado interno*/
+       height: 15%;/*alrura del banner*/
+       border:2px solid gray;
+    }
+    
+    .banner{
+        align-items: center;
+        justify-content: center;
+        display:flex;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    
+    .banner-item{
+        text-decoration: none;
+        color: #f7f7f7;
+        margin: auto;
+        width: auto;
+    }
+
+    .banner-item a {
+        margin-right: 2%;
+        font-size: 1em;
+    }
+    
+    #inicio-container{
+        width: 100%;
+        height: auto;
+        background-image:url('../imagenas productos/papeleria01.jpg');/*fondo imagen*/
+        background-blend-mode: lighten;
+        font-weight: 800;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+       
+       
+    }
+    
+    #inicio-container h2 p {
+        margin-bottom: 2PX;
+        margin-top: 2%;
+    }
+    
+    .logo {
+        width: 10%;
+        height: 90%;
+    
+    }
+    
+    .title {
+        font-size: 24px;
+        text-align: center;
+     }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        column-count: auto;
+        justify-content: space-between;
+    }
+    
+    .product {
+        width: 31%;/*ajusta el ancho segun sea necesario*/
+        border: 2px solid #b0c4de; /* Color del borde */
+        border-radius: 15px; /* Bordes redondeados */
+        padding: 5px; /* Espaciado interno */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra del cuadro */
+        text-align: center; /* Centrar el texto */
+        margin-bottom: 5px;
+        background-color: #f9f9f9; /* Color de fondo */
+        transition: transform 0.3s; /* Transición para el efecto hover */
+    }
+    
+    .product:hover {
+        transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    }
+    
+    .product img {
+        max-width: 200px;/*asegura que la imagen no exceda el contenedor*/
+        height: auto;/*mantiene la relacion de aspecto*/
+        border-radius: 10px; /* Bordes redondeados para la imagen */
+    }
+    
+    .product h2 {
+        font-size: 1.5em; /* Tamaño de la fuente del título */
+        margin: 10px 0; /* Margen para separar el título */
+    }
+    
+    .product h3 {
+        color: orange; /* Color del precio */
+        font-size: 1.2em; /* Tamaño de la fuente del precio */
+        margin: 5px 0; /* Margen para separar el precio */
+    }
+    
+    .product p {
+        font-size: 0.9em; /* Tamaño de la fuente de la descripción */
+        line-height: 1.5; /* Espaciado entre líneas */
+    }
+    
+    .btn-agregar {
+        background-color: #b0c4de; /* Color de fondo del botón */
+        color: white; /* Color del texto del botón */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados para el botón */
+        padding: 5px 10px; /* Espaciado interno del botón */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+        transition: background-color 0.3s; /* Transición para el efecto hover */
+    }
+    
+    .btn-agregar:hover {
+        background-color: #45a049; /* Color de fondo al pasar el ratón */
+    }
+    
+    .nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        column-count: auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    
+    }
+    
+    .papeleria{
+        width:95%;
+        height: 95%;
+    }
+    
+    .empleados {
+        height: 200px;
+        width: 30%;
+        border: 2px solid #b0c4de; /* Color y grosor del borde */
+        border-radius: 15px;       /* Bordes curvos */
+        padding: 2%;             /* Espaciado interno */
+        background-color: #f9f9f9; /* Color de fondo */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+        margin: 2%;              /* Espaciado externo */
+    }
+    
+    .empleados img{
+    max-width: 50px;
+    max-height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    }
+    .empleados h2{
+        text-align: center;
+    align-items: center;
+    }
+    .empleados p{
+        align-items: center;
+        text-align: center;
+    
+    }
+    
+    .btn-agregar{
+        border: 1px solid #2a3d66;
+        margin-bottom: 4%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    
+    /*footer style*/
+    footer {
+        background-color: #2a3d66;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .footer-contact, .footer-links, .footer-socials {
+        margin: 10px;
+        flex: 1;
+        min-width: 250px;
+    }
+    
+    .footer-links ul, .footer-socials ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-links li, .footer-socials li {
+        margin: 5px 0;
+    }
+    
+    .footer-links a, .footer-socials a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer-links a:hover, .footer-socials a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+   
+}
+
